@@ -15,11 +15,11 @@ for (let i=0; i < numberOfFilms; i++) {
     let a = '',
         b = '';
 
-    while (a.length == 0 || a.length > 50) {
+    while (a == null || a.length == 0 || a.length > 50) {
         a = prompt('Один из последних просмотренных фильмов?', '');
     }
 
-    while (b.length == 0 || b.length > 50) {
+    while (b == null || b.length == 0 || b.length > 50) {
         b = prompt('На сколько вы его оцените?', '');
     }
 
